@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+
+            <br><br>
+            <h1 class="title is-1 has-text-centered">Formulaire</h1>
+            <br><br>
+    
+            <div class="columns is-mobile is-multiline is-centered">
+                    <div class="column is-narrow">
+                        <a href="1.1.Inputs&Textarea.html" class="button is-info is-medium">Inputs&Textarea</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="1.2.Select&Checkbox.html" class="button is-info is-medium">Select&Checkbox</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="1.3.Radio&Fichier.html" class="button is-info is-medium">Radio&Fichier</a>
+                    </div>
+            </div>
+        </div>
+    <hr>
+
+
+
+<!-- Début de la leçon -->
+
+<div class="columns  is-centered">
+<div class="column is-half">
+
+
+
+<h4 class="title is-3">Les inputs : </h4>
+<!-- 
+    On peut changer : 
+    -la couleur
+    -la taille
+
+    ----------------
+    ces attributs sont supportés :
+    type : text,password,email,tel;
+ -->
+
+ <input class="" type="text" placeholder="Votre prenom">
+ <br><br>
+ <input class="" type="text" placeholder="Votre prenom">
+ <br><br>
+ <input class="" type="text" placeholder="Votre prenom">
+ <br><br>
+ <input class="" type="text" placeholder="Votre prenom">
+ <br><br>
+ <input class="" type="text" placeholder="Votre prenom">
+
+ <br><br>
+ <h4 class="title is-3">Tailles : </h4>
+ <!-- 
+     is-medium
+     is-large
+     is-small
+  -->
+ <input class="input is-primary " type="text" placeholder="Votre prenom">
+ 
+ <!-- Arrondi -->
+ <br><br>
+ <input class="input is-primary is-large " type="text" placeholder="Votre prenom">
+ <br><br>
+
+ <!-- 
+    pour une icone de chargement :
+    il faut le mettre sur le parent, qui a la classe "control"
+    is-loading : a une icone de chargement
+
+    rajoutez la classe "field" et "control" aux parents lorsque vous
+    avez plusieurs inputs, pour les positionner correctement.
+  -->
+ <br><br>
+ <div class="field">
+    <div class="control is-large">
+        <input class="input is-large" type="text" placeholder="Votre prenom">
+    </div>
+ </div>
+
+
+<!-- désactivé -->
+<br><br>
+<input class="input" type="text" placeholder="Disabled input" disabled>
+
+
+<!-- Avec une icone -->
+<!-- 
+    has-icons-right
+    has-icons-left
+ -->
+<br><br>
+<div class="control has-icons-left has-icons-right">
+    <input class="input" type="email" placeholder="Email">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+
+
+<br><br>
+<h4 class="title is-3">Textarea : </h4>
+<!-- 
+    rows pour les rangées.
+    is-primary (couleurs)
+    is-large pour la taille du placeholdeur
+    is-hovered
+    is-focused
+    is-loading au parent pour l'icone de chargement
+    ajouter l'attribut "disabled" pour le d�sactiver 
+ -->
+<textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+
+</div>
+</div>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Nous utilisons l'éditeur VS Code pour suivre ce cours.
+lien vers le site de VS Code : https://code.visualstudio.com/
+
+Sur VS Code, nous utliserons l'extension 'Live server'.
+Il y aura également fichiers-autosave d'activée, pour ne pas avoir à enregistrer à la main, ce sera automatique.
+
+Bon apprentissage !

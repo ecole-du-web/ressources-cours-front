@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Grille</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+
+            <br><br>
+            <h1 class="title is-1 has-text-centered">La Grille</h1>
+            <br><br>
+    
+            <div class="columns is-mobile is-multiline is-centered">
+                    <div class="column is-narrow">
+                        <a href="1.1.Base&Taille.html" class="button is-info is-medium">Base&Taille</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="1.2.Responsive.html" class="button is-info is-medium">Responsive</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="1.3.Ecart.html" class="button is-info is-medium">Ecart</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="1.4.Alignement.html" class="button is-info is-medium">Alignement</a>
+                    </div>
+            </div>
+        </div>
+    <hr>
+
+
+
+<!-- Début de la leçon -->
+
+<h4 class="title is-3">Pour créer une grille</h4>
+
+<!-- Columns + Column, de base elles se mettent les unes au dessus
+des autres en dessous de 768px. -->
+<div class="">
+    <div class=" has-background-link has-text-light has-text-centered">
+        Premiere col
+    </div>
+    <div class=" has-background-link has-text-light has-text-centered">
+        Seconde col
+    </div>
+    <div class=" has-background-link has-text-light has-text-centered">
+        Troisieme col
+    </div>
+    <div class=" has-background-link has-text-light has-text-centered">
+        Quatrieme col
+    </div>
+</div>
+
+<br><br>
+<h4 class="title is-3">Pour changer la taille :</h4>
+  <!-- 
+is-three-quarters = trois quarts
+is-two-thirds = deux tiers
+is-half = moitié
+is-one-third = 1 tiers
+is-one-quarter = 1 quart
+is-full
+
+aussi les multiples de 20 
+is-four-fifths
+is-three-fifths
+is-two-fifths
+is-one-fifth
+
+   -->
+<div class="columns">
+    <div class="column has-background-warning">1</div>
+    <div class="column has-background-warning">2</div>
+    <div class="column has-background-warning">3</div>
+    <div class="column has-background-warning">4</div>
+</div>
+
+<div class="columns">
+        <div class="column has-background-danger">1</div>
+        <div class="column has-background-danger">2</div>
+        <div class="column has-background-danger">3</div>
+        <div class="column has-background-danger">4</div>
+</div>
+
+<div class="columns">
+        <div class="column has-background-info">1</div>
+        <div class="column has-background-info">2</div>
+        <div class="column has-background-info">3</div>
+        <div class="column has-background-info">4</div>
+</div>
+
+<div class="columns">
+        <div class="column has-background-success">1</div>
+        <div class="column has-background-success">2</div>
+        <div class="column has-background-success">3</div>
+        <div class="column has-background-success">4</div>
+</div>
+
+<!-- On peut aussi changer la taille avec le nombre de colonnes(12) -->
+<br><br>
+<h4 class="title is-3">Avec le nb de colonnes :</h4>
+
+
+<div class="columns">
+        <div class="column has-background-success">1</div>
+        <div class="column has-background-info">2</div>
+        <div class="column has-background-black">3</div>
+        <div class="column has-background-warning">4</div>
+</div>
+
+<br><br>
+<h4 class="title is-3">Décalage:</h4>
+<!-- Pour décaler avec is-offset + ce qu'on veut décaler -->
+<div class="columns">
+        <div class="column has-background-success">1</div>
+</div>
+<div class="columns">
+        <div class="column has-background-success">1</div>
+</div>
+<div class="columns">
+        <div class="column has-background-success">1</div>
+</div>
+
+
+<!-- Is-narrow donne flex:none et la colonne juste la place qu'elle a -->
+<div class="columns">
+
+        <div class="column">
+          <div class="box" style="width: 200px;">
+            <p class="subtitle">200px</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <p class="subtitle">Cette colonne prends le reste</p>
+          </div>
+        </div>
+        
+</div>
+<!-- on peut utiliser is-narrow de manière responsive 
+
+.is-narrow-mobile
+.is-narrow-tablet
+.is-narrow-touch
+.is-narrow-desktop
+.is-narrow-widescreen
+.is-narrow-fullhd
+
+-->
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+</body>
+</html>
