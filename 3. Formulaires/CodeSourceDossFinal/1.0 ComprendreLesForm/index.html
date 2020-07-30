@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="http://google.com" method="post">
+
+      <label for="monInpTxt">Renseignez votre prénom</label>
+      <br><br>
+      <input id="monInpTxt" name="prenom" placeholder="Votre prénom" type="text">
+
+      <br><br>
+
+      <textarea cols="40" rows="20" name="txt"></textarea>
+
+      <br><br>
+
+      <select>
+        <option value="fraise">Fraise</option>
+        <option value="cerise">Cerise</option>
+        <option value="pomme">Pomme</option>
+        <optgroup label="Fruits Rouges">
+          <option value="groseille">Groseille</option>
+          <option value="mûres">Mûres</option>
+          <option value="framboises">Framboises</option>
+        </optgroup>
+      </select>
+
+      <br><br>
+
+      <label for="fruits">Quel est votre fruit préféré ?</label>
+      <input type="text" id="fruits" list="suggestion">
+      <datalist id="suggestion">
+        <option value="Pomme">Vitamine A</option>
+        <option value="Fraise"></option>
+        <option value="Mangue"></option>
+        <option value="Banane"></option>
+      </datalist>
+      
+      <br><br>
+
+      <label for="accord">Vous êtes d'accord ?</label>
+      <input type="checkbox" id="accord" checked name="accord" value="accord">
+
+      <br><br>
+
+      <p>Votre couleur préférée ?</p>
+
+      <label for="rouge">Rouge</label>
+      <input type="radio" id="rouge" name="couleur" value="rouge">
+
+      <label for="jaune">Jaune</label>
+      <input type="radio" id="jaune" name="couleur" value="jaune">
+
+      <label for="rose">Rose</label>
+      <input type="radio" id="rose" name="couleur" value="rose">
+
+
+      <br><br>
+
+      <input type="color">
+
+      <br><br>
+
+      <button>Envoyer</button>
+    </form>
+
+
+
+</body>
+</html>

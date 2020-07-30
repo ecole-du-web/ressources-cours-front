@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #dddcdc;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boxLogin {
+    width: 350px;
+    height: 480px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.containerLogo {
+    height: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgb(250,165,9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle img {
+    width: 100px;
+}
+
+.containerInputs {
+    height: 57%;
+}
+
+form input {
+    display: block;
+    margin: 20px auto;
+    outline: 0;
+    background: #f2f2f2;
+    width: 90%;
+    border: 0;
+    padding: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form button {
+    display: block;
+    margin: 20px auto;
+    outline: 0;
+    background: rgb(250,165,9);
+    width: 90%;
+    border: 0;
+    padding: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.txtFin {
+    text-align: center;
+}
+.txtFin a {
+    text-decoration: none;
+    color: salmon;
+}

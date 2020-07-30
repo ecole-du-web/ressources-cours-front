@@ -1,0 +1,172 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+}
+
+.contGlobal {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Gauche */
+
+.panneauGauche {
+    flex: 1 1 33.333%;
+    padding: 25px;
+}
+.panneauGauche h1 {
+    color: #8b97d7;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.panneauGauche h1 strong {
+    color: #5260ad;
+    font-weight: 900;
+}
+
+.formBloc h3 {
+    color: #666;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formBloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formGroupe:nth-child(4) {
+    margin-bottom: 25px;
+    justify-content: flex-end;
+}
+
+.formBloc .formGroupe .buttonSub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid #8b97d7;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+    background-size: 200%;
+    color: #8b97d7;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formBloc .formGroupe .buttonSub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+
+.formBloc .mdpPerdu a {
+    color: #8b97d7;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+.formBloc .mdpPerdu a:hover {
+    border-bottom-color: #8b97d7;
+}
+
+/* Droite */
+
+.panneauDroit {
+    flex: 1 1 66.666%;
+    background-image: linear-gradient(to bottom right, rgb(149,166,243), rgb(112,113,146));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panneauDroit .illustration {
+    margin-bottom: 50px;
+}
+.panneauDroit h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Animation */
+
+.formBloc .formGroupe:focus-within label,
+.formBloc .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #8b97d7;
+}
+.formBloc .formGroupe:focus-within input,
+.formBloc .formGroupe.animation input {
+    border-bottom-color: #8b97d7;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contGlobal {
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100vw!important;
+        align-items: center;
+    }
+    .panneauDroit {
+        display: none;
+    }
+    .panneauGauche {
+        width: 70vw!important;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .panneauGauche {
+        width: 80vw!important;
+    }
+    .formBloc .formGroupe .buttonSub {
+        margin: 0 auto;
+    }
+    .mdpPerdu {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .panneauGauche {
+        width: 100vw!important;
+    }
+}

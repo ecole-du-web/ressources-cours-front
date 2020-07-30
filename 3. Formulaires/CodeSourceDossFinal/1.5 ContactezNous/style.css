@@ -1,0 +1,89 @@
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxForm {
+    margin-top: 30px;
+    padding: 50px;
+    width: 700px;
+    height: 740px;
+    background: #333;
+    border-radius: 5px;
+}
+h1 {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    color: #f1f1f1;
+}
+h1 span img {
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+
+.emailInp, select, textarea {
+    display: block;
+    margin: 20px auto;
+    outline: 0;
+    background: #f1f1f1;
+    width: 95%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.labelEmail, .labelSelect, .labelTxt {
+    color: #f1f1f1;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    position: relative;
+    top: 7px;
+}
+
+.flex2Inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+.flexInp {
+    margin: 20px auto;
+    outline: 0;
+    background: #f1f1f1;
+    width: 90%;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.flexLeftInp, .flexRightInp {
+    flex-basis: 45%;
+}
+.labelFlex {
+    color: #f1f1f1;
+    position: relative;
+    top: 8px;
+}
+button {
+    width: 45%;
+    display: block;
+    margin: 45px auto 0 auto;
+    outline: none;
+    border: 0;
+    height: 50px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+}
+button:hover {
+    background: lightgreen;
+}

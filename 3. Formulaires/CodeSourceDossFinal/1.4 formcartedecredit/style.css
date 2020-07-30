@@ -1,0 +1,137 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #333;
+}
+.container {
+    width: 550px;
+    height: 520px;
+    background: #fff;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+.contMontant {
+    text-align: center;
+    font-size: 25px;
+    height: 90px;
+    border-bottom: 1px dashed #000;
+}
+.contMontant p {
+    line-height: 90px;
+}
+.inpFull {
+    width: 100%;
+    height: 100px;
+}
+
+.inpFull:nth-child(1) {
+    border-bottom: 1px dashed #000;
+}
+
+.inpFull label {
+    float: left;
+    width: 30%;
+    height: 100%;
+    font-size: 22px;
+    display: block;
+    line-height: 96px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.inpFull input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.inpFull input::placeholder {
+    font-size: 15px;
+    opacity: 0.8;
+}
+input:active, input:focus {
+    outline: none;
+    background: #f1f1f1;
+}
+
+.contExSecu {
+    width: 100%;
+    height: 80px;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.inpExp {
+    width: 48%;
+    height: 100%;
+    float: left;
+    border-right: 1px dashed black;
+}
+
+.inpExp label {
+    font-size: 16px;
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+select {
+    border: none;
+}
+.select2 {
+    width: 60px;
+}
+
+.inpSecu {
+    width: 52%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.inpSecu label {
+    float: left;
+    width: 45%;
+    line-height: 76px;
+    padding-left: 15px;
+}
+.inpSecu input {
+    width: 55%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+}
+.inpSecu input::placeholder {
+    opacity: 0.8;
+}
+
+.contBtn {
+    position: relative;
+    height: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+}
+
+.contBtn button {
+    background: rgb(194,194,194);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s ease background;
+}
+button:hover {
+    background: lightblue;
+}
